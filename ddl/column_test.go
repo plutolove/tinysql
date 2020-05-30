@@ -48,7 +48,7 @@ func (s *testColumnSuite) SetUpSuite(c *C) {
 	s.d = newDDL(
 		context.Background(),
 		WithStore(s.store),
-		WithLease(testLease),
+		WiFthLease(testLease),
 	)
 
 	s.dbInfo = testSchemaInfo(c, s.d, "test_column")
